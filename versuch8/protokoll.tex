@@ -1,0 +1,54 @@
+\setcounter{section}{8}
+\addsec{Versuch 8}
+\subsection{Aufbau einer Digitalschaltung auf Platine: Effekt von Filterkondensatoren}
+In diesem Versuch wurde ein einfacher Oszillator mit einem NE555 aufgebaut, der im weiteren Versuch die ein PAL mit verschiedenen Funktionen taktete. Dabei wurden zuerst die Filterkondensatoren weggelassen um deren Effekt zu sehen.
+%TODO: Photo: Schirmbild ohne Kondensatoren
+Wie man sieht, bricht die Versorgungsspannung mit jedem Takt auf etwa 1.7V ein und überschwingt dann auf 7V. Die Unterschiede zwischen den verschiedenen Flanken kommen daher, dass nicht bei jedem Takt gleichviele Transistoren schalten.\\
+Wenn man die Filterkondensatoren zufügt, verbessert sich die Situation deutlich:
+%TODO: Photo: Schirmbild mit Kondensatoren
+Man erkennt, dass die Amplitude der Schwingung auf etwa ein halbes Volt abgeschwächt wurde, da der Kondensator die benötigte Spannung bereitstellt.
+
+\subsection{Mechanische Schalter in Digitalschaltungen}
+%TODO: Photo: Schirmbild Schalterprellen
+Wie man sieht, prellte der Schalter in diesem Fall 2.36µs, was eine schnelle Digitalschaltung als eine Serie von schnellen Tastendrücken wahrnehmen würde, in mehreren Versuchen jedoch durchaus auch mal 4µs. Daher würde ich empfehlen, mindestens 5µs zu warten. Allerdings ist das Prellen für ein Resetsignal eigentlich völlig unerheblich. Möchte/muss man dennoch einen Taster entprellen, so bieten sich 2 Möglichkeiten an:
+\begin{itemize}
+	\item Wenn man das Signal an einem µController auswertet, kann man den Controller anweisen, nach einem Flankenwechsel für einige Mikrosekunden keine Flankenwechsel mehr zu registrieren.
+	\item Wenn man das Signal in Hardware entprellen möchte, bietet sich ein einfaches RC-Glied an.
+\end{itemize}
+
+
+
+\subsection{Fehlersuche mit der Triggerfunktion des Logikanalysators}
+1. LSB toggelt richtig.
+
+
+\subsection{Bestimmung eines unbekannten Logikbausteins}
+Ich habe Schaltkreis Nummer 6 Bestimmt und bin zu dem Schluss gelangt, dass es sich um Schaltkreis 2, 4* NOR mit 2 Eingängen handelt. Anbei eine Tabelle der Schaltfunktionen.
+\begin{tabular}{|l|l|l|}
+	\hline
+	a: Pin 2|5|8|11 & b: Pin 3|6|9|12 & Ausgang c: Pin 1|4|10|13 \\
+	\hline
+	0 & 0 & 1\\
+	0 & 1 & 0\\
+	1 & 0 & 0\\
+	1 & 1 & 0\\
+	\hline
+\end{tabular}
+\[ \Rightarrow \overline{a} \wedge \overline{b} = c \Rightarrow \overline{a \vee b} = c \Leftrightarrow a\;NOR\;b=c \]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

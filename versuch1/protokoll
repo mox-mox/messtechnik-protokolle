@@ -1,0 +1,55 @@
+#Versuch 1
+#Strom in Abhängigkeit der Spannung
+#Spannung [V]	gemessener Strom [mA]	erwarteter Strom [mA]
+0				0						0
+1				9.6453					10
+2				19.273					20
+3				28.891					30
+4				38.500					40
+5				48.040					50
+6				57.570					60
+7				66.980					70
+8				76.333					80
+9				85.750					90
+10				95.000					100
+11				104.200					110
+12				113.300					120
+13				128.200					130
+14				137.400					140
+15				146.500					150
+
+
+#Versuch 2
+#Strom in Abhängigkeit der Spannung
+#Spannung[V]	Strom[mA]
+0			0
+1			11.500
+2			15.080
+3			18.410
+4			21.540
+5			24.465
+6			27.112
+7			29.600
+8			31.943
+9			34.146
+10			36.260
+11			38.300
+12			40.266
+
+Versuch 3
+Teilspannung(Leerlauf) in Abhängigkeit der Spannung:
+Eingangsspannung 15 V, Ausgangsspannung 7.4773 V
+Kurzschlussstrom 1.4995 mA
+
+Versuch 4
+
+Messung direkt am Widerstand:
+Ausgangsspannung des Netzteils: 1.0V, 0.915A(Netzteil), Spannung am Widerstand: 0.95868V
+
+Messung mit Wienbrücke
+Ausgangsspannung des Netzteils: 1.0V, 0.928A(Netzteil), Spnnung am Widerstand: 0.99647V
+
+
+
+
+

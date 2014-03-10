@@ -1,0 +1,9 @@
+* Schematics Netlist *
+
+
+
+R_R1         0 $N_0001  1k  
+C_C         0 $N_0001  1mF  
+V_V2         $N_0002 0 DC 0V AC 0V
++SIN 0V 1V 50 0 0 0
+D_D2         $N_0002 $N_0001 MBD101 

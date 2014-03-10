@@ -1,0 +1,25 @@
+#!/usr/bin/gnuplot
+set xlabel "Digitalwert"
+set ylabel "Ausgangsspannung [V]"
+set key top left
+plot "protokoll" index 0 using 1:2 title "gemessene Spannung" pt 1, "protokoll" index 0 using 1:3 title "erwartete Spannung" with lines, "protokoll" index 0 using 1:4 title "erwartete Spannung" pt 1
+pause 2
+set terminal png
+set output "versuch_9_1.png"
+replot
+set terminal x11
+set output
+
+
+set xlabel "Eingangsspannung [V]"
+set ylabel "ADC-Wert"
+set key bottom right
+#plot "protokoll" index 1 using 1:2 title "gemessener Strom" with lines
+plot "protokoll" index 1 using 1:2 title "ADC-Kennlinie" pt 1
+pause 2
+set terminal png
+set output "versuch_9_3.png"
+replot
+set terminal x11
+set output
+

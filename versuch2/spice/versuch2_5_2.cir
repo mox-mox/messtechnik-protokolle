@@ -1,0 +1,23 @@
+* C:\Users\mox\Desktop\Versuch2\versuch2_5_2.sch
+
+* Schematics Version 9.1 - Web Update 1
+* Wed Oct 30 17:14:54 2013
+
+
+
+** Analysis setup **
+.tran 0.0001s 0.1s 0 0.001s
+.OP 
+
+
+* From [PSPICE NETLIST] section of pspiceev.ini:
+.lib "nom.lib"
+
+.INC "versuch2_5_2.net"
+.INC "versuch2_5_2.als"
+
+
+.probe
+
+
+.END

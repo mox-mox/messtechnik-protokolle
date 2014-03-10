@@ -1,0 +1,98 @@
+%{{{ Heading Stuff
+
+%{{{ Documentclass, usepackages
+
+\documentclass[ngerman]{scrartcl}
+\usepackage[ngerman]{babel}
+\usepackage{fontspec}
+\usepackage{graphicx, float, amsmath, url}
+\usepackage{latexsym}
+
+\usepackage[utf8]{luainputenc}
+%\usepackage[T1]{fontenc}
+%\usepackage{textcomp}
+%\renewcommand{\rmdefault}{lmr}
+%\DeclareUnicodeCharacter{00BD}{\textonehalf}
+%\DeclareUnicodeCharacter{00B5}{\textmu}
+
+
+
+
+%}}}
+
+%{{{ Titel, Author, etc...
+
+%\newcommand{\blattnummer}{6}												%% Nummer des Übungsblattes angeben
+\newcommand{\myauthor}{Moritz Nöltner}
+%\newcommand{\mytutor}{Amin Kiem}
+\newcommand{\mylecturer}{Andreas Wurz}
+\newcommand{\mytitle}{Messtechnik-Protokoll WS 13/14}
+\title{\mytitle}
+%%%%\subtitle{Versuch 1: Gleichstromschaltung}
+\author{\myauthor}
+%}}}
+
+%{{{ Kopf und Fußzeilen einrichten
+\usepackage{fontspec, fancyhdr}
+\pagestyle{fancy}
+
+\lhead{\bfseries \mytitle}
+%%\chead{\mytitle}
+\rhead{\bfseries \myauthor}
+
+\lfoot{\bfseries \today}
+%\cfoot{Tutor: \mytutor}
+\cfoot{Dozent: \mylecturer}
+\rfoot{\bfseries \thepage}
+
+\renewcommand{\headrulewidth}{1pt}
+\renewcommand{\footrulewidth}{1pt}
+%\textheight = 592pt	%% Standardwert
+\textheight = 650pt 	%% Für Hochformat
+%%\textheight = 450pt 	%% Für Querformat
+%}}}
+
+%{{{ Longtable
+
+\usepackage{multirow}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{pdfpages}
+%}}}
+
+%{{{ Minted (Highlighter für Code)
+
+%% \usepackage{minted}
+%% \definecolor{bg}{rgb}{0.95,0.95,0.95}
+%% \newminted[Java]{java}{numbersep=5pt, bgcolor=bg, gobble=0, linenos, tabsize=4}
+%}}}
+
+%{{{ MISC
+
+\newcommand{\entspricht}{\ensuremath{\mathrel{\wid ehat{=}} }}
+\newcommand{\Ohm}{\Omega}
+
+\newcommand{\mikro}{\mu}
+\newcommand{\µ}{\mu}
+\newcommand{\µF}{\mu F}
+\newcommand{\µA}{\mu A}
+\newcommand{\µV}{\mu V}
+\newcommand{\µs}{\mu s}
+
+%}}}
+
+%}}}
+
+
+\begin{document}
+
+\maketitle
+\tableofcontents
+\newpage
+
+%%%%\setcounter{section}{-1}
+%%%%\section{Einleitung}
+%%%%lorem ispum dolor sit amet...
+
+
+

@@ -1,0 +1,55 @@
+5.2:
+Wenn man die Quelle direkt an den Verbraucher anschliest, gilt:
+U_L = U_Ein*(R_L/(R_i+R_L))
+U_L = U_Ein * ( (R_L+(1/(j omega C))) / (R_i+(R_L+(1/(j omega C)))) )
+
+Es gilt: I_C = beta * I_B
+
+
+
+
+Ruhestrom I_C=1mA, beta=100, 
+Re = 7.5 kOhm
+r1=82 kOhm
+r2=68 kOhm
+rl=4,7 kOhm
+caus=1 µF
+
+
+
+
+5.3:
+R_c: U=RI, 10V=R_C*0.5mA => R_C = 10V/0.0005A=20kOhm
+
+R_E: U=RI, 1V=R_C*0.5mA =? R_e = 1V/0.0005A=2kOhm
+
+Es gilt beta=100 => R_ein = beta*R_e = 100*2kOhm = 200kOhm => Der gesammte Vorspannungsteiler sollte 100kOhm haben.
+
+U_Basis soll bei U_e + 0.6V = 1.6V liegen, also muss der Spannungsteiler das Verhältnis 1.6v/vcc=1.6/20=0.8/10 haben.
+
+1.6V    R2
+---- = -----, R1+R2=100kOhm => R1=100kOhm - R2
+20V    R1+R2
+
+             R2          R2
+0.08 = ------------- = ------- => R2= 100kOhm * 0.08 = 8kOhm ~=8.2kOhm
+       100kOhm-R2+R2   100kOhm
+
+=> R1 = 100kOhm - 8.2kOhm = 91.8kOhm ~= 100kOhm
+
+R3:
+
+
+	     R_c
+
+-------------------------- = 100 => R3=171.43 Ohm
+	     1
+	------------  +  r_e
+	  1      1
+	 ---- + ----
+	 R_E    R_3
+
+
+
+
+C2: 

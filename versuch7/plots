@@ -1,0 +1,37 @@
+#!/usr/bin/gnuplot
+set xlabel "Spannung [V]"
+set ylabel "Strom [mA]"
+set key top left
+#plot "protokoll" index 0 using 1:2 title "gemessener Strom" with lines, "protokoll" index 0 using 1:3 title "erwarteter Strom" pt 1
+plot "protokoll" index 0 using 1:2 title "Strom durch die pn-Diode" with lines
+pause 2
+set terminal png
+set output "versuch_2_1.png"
+replot
+set terminal x11
+set output
+
+#	set xlabel "Spannung [V]"
+#	set ylabel "Strom [mA]"
+#	set key top left
+#	#plot "protokoll" index 1 using 1:2 title "gemessener Strom" with lines
+#	plot "protokoll" index 1 using 1:2 title "Strom durch die Schottky-Diode" pt 1
+#	pause 2
+#	set terminal png
+#	set output "versuch_2_2.png"
+#	replot
+#	set terminal x11
+#	set output
+
+
+#	set xlabel "Spannung [V]"
+#	set ylabel "Strom [mA]"
+#	set key top left
+#	#plot "protokoll" index 1 using 1:2 title "gemessener Strom" with lines
+#	plot "protokoll" index 2 using 1:2 title "Strom durch die Leuchtdiode" pt 1
+#	pause 2
+#	set terminal png
+#	set output "versuch_2_3.png"
+#	replot
+#	set terminal x11
+#	set output
